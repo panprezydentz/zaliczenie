@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zaliczenie js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83d522cd33.js" crossorigin="anonymous"></script>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+    body {
+    font-family: "Raleway", sans-serif;
+    background-color: #ebebeb;
+}
+
+    .all {
+        width:30vw;
+        background:#384152;
+        border-radius:18px;
+        padding:10px;
+        margin:5vw;
+    }
+    .tasklist-header span {
+        display:block;
+        font-size:19px;
+        letter-spacing: 2px;
+        color: #6a7488;
+        margin-bottom:5px;
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    } 
+    input {
+        background:#202938;
+        border-radius:15px;
+        width:80%;
+        border:none;
+        padding:8px;
+        color:#ebebeb;
+    }
+    .add-button {
+        border: none;
+    background-color: transparent;
+    color: #cdb2b7;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    }
+   .tasklist-container {
+    margin-top:10px;
+   } 
+   .tasklist-container p {
+    color: #8590a7;
+    font-size: 13px;
+    letter-spacing:1px;
+    margin-bottom:7px;
+   }
+    
+    li {
+        background-color: #111727;
+    display: flex;
+    justify-content: space-between;
+    color: #929aa8;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    padding: 6px;
+    font-size:12px;
+    }
+   .tasklist-container button {
+    background:transparent; 
+    border:none;
+    margin-left:5px;
+   } 
+   .complete {
+    color:pink;
+   }
+   .delete {color:#da7777;}
+   .completed {color:rgb(124, 107, 120)}
+</style>
+</head>
+<body>
+    <div class="all">
+    <div class="tasklist-header">
+        <span>Todo list</span>
+
+    <input type="text" class="add-task" placeholder="wpisz zadanie...">
+    <button class="add-button">Dodaj</button>
+    </div>
+
+<div class="tasklist-container">
+    <p>Twoje zadania:</p>
+    <ul></ul>
+</div></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
